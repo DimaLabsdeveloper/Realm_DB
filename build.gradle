@@ -14,7 +14,14 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+    }
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
